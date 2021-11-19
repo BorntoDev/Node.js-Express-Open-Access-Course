@@ -13,6 +13,8 @@ app.use(express.static(path.join(__dirname,"/public/")));
 app.set("views","./src/views");
 app.set("view engine", "ejs")
 
+app.get("/products")
+
 app.get("/", (req,res) =>{
 
     res.render('index',{username: 'Prameza55+', customers: ["Kitti113","Kittikorn","Kitty"]});
